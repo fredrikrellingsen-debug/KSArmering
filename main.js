@@ -1,9 +1,9 @@
-import { app } from './firebase-config.js';
+import { getFirebaseApp } from './firebase-config.js';
 
-// Bekreft at Firebase-appen er initialisert
-if (app) {
-  window.__FIREBASE_APP_NAME__ = app.name;
-}
+// Initialiser Firebase automatisk via Firebase Hosting sin innebygde init.json
+getFirebaseApp().then(app => {
+  if (app) window.__FIREBASE_APP_NAME__ = app.name;
+});
 
 // Mobilmeny med backdrop, tastaturnavigasjon (Escape) og scroll-lock
 const burger = document.getElementById('burger');
@@ -95,13 +95,16 @@ if (form) {
     }
 
     try {
-      const { getFirestore, collection, addDoc, serverTimestamp } = await import('firebase/firestore');
-      const db = getFirestore(app);
-      await addDoc(collection(db, 'inquiries'), {
-        ...data,
-        site: 'ksarmering',
-        createdAt: serverTimestamp(),
-      });
+      const app = await getFirebaseApp();
+      if (app) {
+        const { getFirestore, collection, addDoc, serverTimestamp } = await import('firebase/firestore');
+        const db = getFirestore(app);
+        await addDoc(collection(db, 'inquiries'), {
+          ...data,
+          site: 'ksarmering',
+          createdAt: serverTimestamp(),
+        });
+      }
     } catch {
       // Fortsett med bekreftelse til bruker selv om Firestore ikke er åpnet for offentlig skriving ennå
     } finally {
