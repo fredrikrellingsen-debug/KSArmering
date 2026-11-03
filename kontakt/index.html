@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="nb">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#151A21">
+<meta name="format-detection" content="telephone=no">
+<title>Forespør kapasitet eller pristilbud – KS Armering AS</title>
+<meta name="description" content="Kontakt KS Armering AS for pristilbud på tonnasje, fastpris eller innleie av selvgående armeringslag til bygge- og anleggsprosjekter.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://images.unsplash.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../style.css">
+<script type="importmap">
+{
+  "imports": {
+    "firebase/app": "https://www.gstatic.com/firebasejs/11.0.2/firebase-app.js",
+    "firebase/firestore": "https://www.gstatic.com/firebasejs/11.0.2/firebase-firestore.js",
+    "firebase/analytics": "https://www.gstatic.com/firebasejs/11.0.2/firebase-analytics.js"
+  }
+}
+</script>
+</head>
+<body class="">
+<a class="skip-link" href="#mainContent">Hopp til hovedinnhold</a>
+<header class="site-header">
+  <div class="container header-in">
+    <a class="logo" href="../" aria-label="KS Armering AS – Til forsiden">
+      <span class="logo-mark" aria-hidden="true"></span>
+      <span>KS ARMERING AS</span>
+    </a>
+    <nav class="main-nav" id="mainNav" aria-label="Hovedmeny">
+      <div class="nav-links"><a href="../">Hjem</a><a href="../tjenester/">Tjenester</a><a href="../prosjekter/">Prosjekter</a><a href="../om-oss/">Om oss</a><a href="../kontakt/" class="active" aria-current="page">Kontakt</a></div>
+      <a class="btn btn-primary nav-cta" href="../kontakt/">Forespør kapasitet / tilbud</a>
+    </nav>
+    <button class="burger" id="burger" type="button" aria-label="Åpne meny" aria-expanded="false" aria-controls="mainNav">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+<div class="nav-backdrop" id="navBackdrop" hidden></div>
+
+<main id="mainContent" tabindex="-1">
+
+<section class="page-hero">
+  <div class="container">
+    <span class="badge">Kontakt & Tilbudsforespørsel</span>
+    <h1>Forespør kapasitet eller pristilbud</h1>
+    <p class="lead">Send oss en kort beskrivelse av prosjektet eller behovet ditt, så tar vi raskt kontakt for å gjennomgå tegninger, tidsplan og prising.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container contact-grid">
+    <aside class="contact-aside">
+      <div class="card contact-info-card">
+        <span class="kicker">Direkte Kontakt</span>
+        <h3>KS Armering AS</h3>
+        <p>Ta gjerne direkte kontakt på telefon eller e-post dersom det gjelder rask avklaring av kapasitet, befaring eller oversendelse av armeringstegninger og bøyelister.</p>
+        <ul class="contact-list">
+          <li>
+            <strong>Telefon</strong>
+            <a href="tel:+4740000000">+47 400 00 000</a>
+          </li>
+          <li>
+            <strong>E-post</strong>
+            <a href="mailto:post@ksarmering.no">post@ksarmering.no</a>
+          </li>
+          <li>
+            <strong>Åpningstider</strong>
+            <span>Man–Fre 07:00–16:00</span>
+          </li>
+          <li>
+            <strong>Oppdragsområde</strong>
+            <span>Bygg, industri og anlegg – rask mobilisering</span>
+          </li>
+        </ul>
+      </div>
+
+      <div class="card infobox">
+        <h3>Rask tilbakemelding til entreprenører</h3>
+        <ol>
+          <li>Send inn forespørsel eller kontakt oss på telefon</li>
+          <li>Vi går gjennom omfang, tonnasje eller bemanningsbehov</li>
+          <li>Du får rask avklaring på kapasitet og pris</li>
+        </ol>
+      </div>
+    </aside>
+
+    <form class="card form" id="contactForm" novalidate>
+      <div class="full form-head">
+        <h2>Send forespørsel om prosjekt eller bemanning</h2>
+        <p>Fyll ut skjemaet under, så tar vi kontakt for videre gjennomgang av tegningsgrunnlag og oppstart.</p>
+      </div>
+  <div class="field">
+    <label for="bedrift">Bedriftsnavn / Entreprenør <span class="req" aria-hidden="true">*</span></label>
+    <input id="bedrift" name="bedrift" type="text" required autocomplete="organization" placeholder="F.eks. Betong & Bygg Entreprenør AS">
+  </div>
+  <div class="field">
+    <label for="kontaktperson">Kontaktperson <span class="req" aria-hidden="true">*</span></label>
+    <input id="kontaktperson" name="kontaktperson" type="text" required autocomplete="name" placeholder="Navn og rolle / tittel">
+  </div>
+  <div class="field">
+    <label for="telefon">Telefonnummer <span class="req" aria-hidden="true">*</span></label>
+    <input id="telefon" name="telefon" type="tel" required autocomplete="tel" inputmode="tel" placeholder="+47 000 00 000">
+  </div>
+  <div class="field">
+    <label for="epost">E-postadresse <span class="req" aria-hidden="true">*</span></label>
+    <input id="epost" name="epost" type="email" required autocomplete="email" inputmode="email" placeholder="navn@entreprenor.no">
+  </div>
+  <div class="field">
+    <label for="sted">Prosjektsted / Kommune <span class="req" aria-hidden="true">*</span></label>
+    <input id="sted" name="sted" type="text" required placeholder="F.eks. Oslo, Lillestrøm, Drammen …">
+  </div>
+  <div class="field">
+    <label for="type">Type oppdrag <span class="req" aria-hidden="true">*</span></label>
+    <select id="type" name="type" required>
+      <option value="">Velg alternativ …</option>
+      <option value="Fastpris / Tonnasjepris på prosjekt">Fastpris / Tonnasjepris på prosjekt</option><option value="Innleie av jernbindere">Innleie av jernbindere</option><option value="Bolig- og næringsbygg">Bolig- og næringsbygg</option><option value="Anlegg og infrastruktur">Anlegg og infrastruktur</option><option value="Annet">Annet</option>
+    </select>
+  </div>
+      <div class="full">
+  <div class="field">
+    <label for="oppstart">Ønsket oppstart <span class="req" aria-hidden="true">*</span></label>
+    <select id="oppstart" name="oppstart" required>
+      <option value="">Velg alternativ …</option>
+      <option value="Så snart som mulig">Så snart som mulig</option><option value="Innen 2–4 uker">Innen 2–4 uker</option><option value="Planlagt fremtidig prosjekt">Planlagt fremtidig prosjekt</option>
+    </select>
+  </div>
+      </div>
+      <div class="field full">
+        <label for="beskrivelse">Kort beskrivelse av prosjektet / estimert mengde <span class="req" aria-hidden="true">*</span></label>
+        <textarea id="beskrivelse" name="beskrivelse" rows="5" required placeholder="Beskriv kort type konstruksjon (f.eks. bunnplate, dekker, vegger, anlegg), estimert tonnasje eller antall jernbindere, og ønsket tidsperiode …"></textarea>
+      </div>
+      <div class="full">
+        <button class="btn btn-primary btn-block" id="submitBtn" type="submit">Send forespørsel</button>
+      </div>
+      <p class="form-ok full" id="formOk" role="status" aria-live="polite" hidden>
+        Takk! Forespørselen din er registrert hos KS Armering AS. Vi tar kontakt med deg innen kort tid.
+      </p>
+    </form>
+  </div>
+</section>
+</main>
+
+<footer class="site-footer">
+  <div class="container foot-grid">
+    <div class="foot-brand">
+      <a class="logo light" href="../"><span class="logo-mark" aria-hidden="true"></span><span>KS ARMERING AS</span></a>
+      <p>Spesialisert underentreprenør innen armering og jernbinding for hovedentreprenører, betongentreprenører, utbyggere og byggherrer over hele landet.</p>
+      <ul class="foot-contact">
+        <li><strong>Telefon:</strong> <a href="tel:+4740000000">+47 400 00 000</a></li>
+        <li><strong>E-post:</strong> <a href="mailto:post@ksarmering.no">post@ksarmering.no</a></li>
+        <li><strong>Åpningstid:</strong> Man–Fre 07:00–16:00</li>
+      </ul>
+    </div>
+    <div>
+      <h4>Hurtiglenker</h4>
+      <nav aria-label="Bunntekstmeny">
+        <a href="../">Hjem</a><a href="../tjenester/">Tjenester</a><a href="../prosjekter/">Prosjekter</a><a href="../om-oss/">Om oss</a><a href="../kontakt/">Kontakt</a>
+      </nav>
+    </div>
+    <div>
+      <h4>Fagområder</h4>
+      <ul class="foot-list">
+        <li><a href="../tjenester/#jernbinding">Jernbinding &amp; montering på plass</a></li>
+        <li><a href="../tjenester/#fundament">Armering for bygg, dekke &amp; fundament</a></li>
+        <li><a href="../tjenester/#anlegg">Anleggsarmering &amp; infrastruktur</a></li>
+        <li><a href="../tjenester/#kapasitet">Innleie av armeringslag &amp; prosjektstøtte</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Kvalitet &amp; Utførelse</h4>
+      <p class="foot-note">Alt armeringsarbeid utføres i henhold til tekniske arbeidstegninger, bøyelister, NS-EN 13670 og prosjektets kontrollplan.</p>
+      <a class="btn btn-primary btn-sm" href="../kontakt/">Send forespørsel →</a>
+    </div>
+  </div>
+  <div class="container foot-bottom">
+    <span>© KS Armering AS. Levert av Vikingnet.</span>
+    <span class="foot-meta">Jernbinding · Slakkarmering · Bygg, Industri &amp; Anlegg</span>
+  </div>
+</footer>
+
+<script type="module" src="../main.js"></script>
+</body>
+</html>

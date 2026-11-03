@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="nb">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#151A21">
+<meta name="format-detection" content="telephone=no">
+<title>KS Armering AS – Spesialister på armering og jernbinding for bygg og anlegg</title>
+<meta name="description" content="KS Armering AS utfører alt innen jernbinding, kapping, bøying og montering av armering for næringsbygg, boligprosjekter, industri og samferdsel.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://images.unsplash.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./style.css">
+<script type="importmap">
+{
+  "imports": {
+    "firebase/app": "https://www.gstatic.com/firebasejs/11.0.2/firebase-app.js",
+    "firebase/firestore": "https://www.gstatic.com/firebasejs/11.0.2/firebase-firestore.js",
+    "firebase/analytics": "https://www.gstatic.com/firebasejs/11.0.2/firebase-analytics.js"
+  }
+}
+</script>
+</head>
+<body class="has-mobile-cta">
+<a class="skip-link" href="#mainContent">Hopp til hovedinnhold</a>
+<header class="site-header">
+  <div class="container header-in">
+    <a class="logo" href="./" aria-label="KS Armering AS – Til forsiden">
+      <span class="logo-mark" aria-hidden="true"></span>
+      <span>KS ARMERING AS</span>
+    </a>
+    <nav class="main-nav" id="mainNav" aria-label="Hovedmeny">
+      <div class="nav-links"><a href="./" class="active" aria-current="page">Hjem</a><a href="./tjenester/">Tjenester</a><a href="./prosjekter/">Prosjekter</a><a href="./om-oss/">Om oss</a><a href="./kontakt/">Kontakt</a></div>
+      <a class="btn btn-primary nav-cta" href="./kontakt/">Forespør kapasitet / tilbud</a>
+    </nav>
+    <button class="burger" id="burger" type="button" aria-label="Åpne meny" aria-expanded="false" aria-controls="mainNav">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+<div class="nav-backdrop" id="navBackdrop" hidden></div>
+
+<main id="mainContent" tabindex="-1">
+
+<section class="hero">
+  <div class="container hero-grid">
+    <div class="hero-copy">
+      <span class="badge">Spesialister på armering og jernbinding for bygg og anlegg</span>
+      <h1>Styrken i betongen starter med presis armering</h1>
+      <p class="lead">KS Armering AS utfører alt innen jernbinding, kapping, bøying og montering av armering for næringsbygg, boligprosjekter, industri og samferdsel. Vi leverer høy kapasitet, nøyaktig utførelse etter tegning og full fremdrift på byggeplassen.</p>
+      <div class="btn-row">
+        <a class="btn btn-primary" href="./kontakt/">Be om pristilbud eller kapasitet</a>
+        <a class="btn btn-outline" href="./tjenester/">Se våre tjenester</a>
+      </div>
+      <ul class="trust">
+        <li><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><span>Utførelse strengt etter armeringstegninger og bøyelister</span></li>
+        <li><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><span>Rask mobilisering på bygge- og anleggsplass</span></li>
+        <li><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><span>Kompromissløst fokus på HMS, kvalitet og fremdrift</span></li>
+      </ul>
+    </div>
+    <div class="hero-img">
+      <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=1200&q=78" srcset="https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=600&q=78 600w, https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=1000&q=78 1000w, https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=1600&q=78 1600w, https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=2200&q=78 2200w" sizes="(max-width: 960px) 92vw, 560px" alt="Jernbindere som monterer armeringsjern på byggeplass" loading="eager" fetchpriority="high" onerror="this.classList.add('broken')">
+      <div class="hero-stat-card">
+        <strong>100 % etter tegning</strong>
+        <span>Kvalitetssikret overdekning, forankring og knutepunkter før hver støp</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="metrics-strip" aria-label="Nøkkelfordeler for entreprenører">
+  <div class="container metrics-grid">
+    <div class="metric-item">
+      <strong>Bygg, Næring &amp; Anlegg</strong>
+      <span>Fra boligblokker og parkeringskjellere til bruer og tungindustri</span>
+    </div>
+    <div class="metric-item">
+      <strong>Fleksible Oppgjør</strong>
+      <span>Fastpris etter bøyeliste, enhetspris pr. tonn eller innleie på time</span>
+    </div>
+    <div class="metric-item">
+      <strong>Selvgående Lag</strong>
+      <span>Erfarne jernbindere med egen bas som leser komplekse tegninger</span>
+    </div>
+    <div class="metric-item">
+      <strong>Full Egenkontroll</strong>
+      <span>Gjennomgang av overdekning, senteravstand og skjøter før utstøping</span>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="sec-head">
+      <span class="kicker">Tjenesteoversikt</span>
+      <h2>Komplette armeringsleveranser på bygge- og anleggsplass</h2>
+      <p class="sub">Vi tilpasser bemanning og gjennomføring etter støpeplan, konstruksjonstype og fremdriftskrav – enten dere trenger et komplett armeringsentreprise-opplegg eller ekstra kapasitet i kritiske faser.</p>
+    </div>
+    <div class="grid-4">
+        <article class="card service-card">
+          <div class="icon"><svg viewBox="0 0 24 24" width="28" height="28" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 8h18M3 16h18M8 3v18M16 3v18"/></svg></div>
+          <h3>Jernbinding & Montering på Plass</h3>
+          <p>Komplett legging, kapping, bøying og binding av kamstål, armeringsnett og spesialarmering direkte på dekket eller i byggegropen.</p>
+          <a class="more" href="./tjenester/">Les mer →</a>
+        </article>
+        <article class="card service-card">
+          <div class="icon"><svg viewBox="0 0 24 24" width="28" height="28" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 21h18M5 21V7l7-4 7 4v14M9 21v-6h6v6"/></svg></div>
+          <h3>Armering for Bygg, Dekke & Fundament</h3>
+          <p>Nøyaktig armering av banketter, bunnplater, plasstøpte kjellervegger, søyler, dragere og etasjeskillere i bolig- og næringsbygg.</p>
+          <a class="more" href="./tjenester/">Les mer →</a>
+        </article>
+        <article class="card service-card">
+          <div class="icon"><svg viewBox="0 0 24 24" width="28" height="28" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 18h20M4 18v-6a8 8 0 0 1 16 0v6M12 4v14"/></svg></div>
+          <h3>Anleggsarmering & Infrastruktur</h3>
+          <p>Håndtering av grov dimensjonsarmering og tette knutepunkter i kulverter, støttemurer, brukonstruksjoner, kraft- og VA-anlegg.</p>
+          <a class="more" href="./tjenester/">Les mer →</a>
+        </article>
+        <article class="card service-card">
+          <div class="icon"><svg viewBox="0 0 24 24" width="28" height="28" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2"><circle cx="9" cy="8" r="3"/><circle cx="17" cy="9" r="2.5"/><path d="M3 20c0-3.5 2.7-6 6-6s6 2.5 6 6M15 14.5c3 0 6 1.5 6 5.5"/></svg></div>
+          <h3>Innleie av Armeringslag & Prosjektstøtte</h3>
+          <p>Rask mobilisering av selvgående arbeidslag med egen bas ved arbeidstopper, stramme støpefrister eller langvarige råbygg.</p>
+          <a class="more" href="./tjenester/">Les mer →</a>
+        </article>
+    </div>
+  </div>
+</section>
+
+<section class="section alt">
+  <div class="container">
+    <div class="sec-head">
+      <span class="kicker">Kvalitet &amp; Fremdrift</span>
+      <h2>Hvorfor velge KS Armering AS</h2>
+      <p class="sub">Når betongbilen er bestilt og kranen går, er det avgjørende at armeringsarbeidet holder riktig tempo og består kontrollen uten anmerkninger.</p>
+    </div>
+    <div class="grid-3">
+      <article class="card why">
+        <span class="num">01</span>
+        <h3>Presisjon i hver knute</h3>
+        <p>Riktig overdekning, senteravstand og forankringslengde sikrer at konstruksjonen består kontroll på første forsøk. Vi kontrollerer avstandsklosser, stolper og oppheng nøye før forskaling lukkes.</p>
+      </article>
+      <article class="card why">
+        <span class="num">02</span>
+        <h3>Høy produksjonstakt</h3>
+        <p>Erfarne jernbindere som jobber effektivt og strukturert slik at støpeplanen alltid holdes. Vi planlegger rekkefølge, mottak av jern og krantid i tett dialog med forskalingslag og byggeleder.</p>
+      </article>
+      <article class="card why">
+        <span class="num">03</span>
+        <h3>Sikker og ryddig byggeplass</h3>
+        <p>Vi følger alle krav til verneutstyr, sikker jobb-analyse (SJA) og orden på dekket. God sortering av bøyelister og ryddige gangsoner reduserer ulykkesrisiko og øker hastigheten.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="sec-head">
+      <span class="kicker">Leveranseområder</span>
+      <h2>Utvalgte leveranseområder</h2>
+      <p class="sub">Vi leverer strukturert armeringsarbeid på tvers av boligbygging, næringsprosjekter, industrianlegg og offentlig infrastruktur.</p>
+    </div>
+    <div class="grid-3">
+        <article class="card img-card">
+          <div class="card-media"><img src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&w=1200&q=78" srcset="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&w=600&q=78 600w, https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&w=1000&q=78 1000w, https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&w=1600&q=78 1600w, https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&w=2200&q=78 2200w" sizes="(max-width: 640px) 92vw, (max-width: 1024px) 46vw, 600px" alt="Bunnplate og fundamentering for næringsbygg" loading="lazy" decoding="async" onerror="this.classList.add('broken')"></div>
+          <div class="pad">
+            <span class="tag">Bygg & Næring</span>
+            <h3>Bunnplate og fundamentering for næringsbygg</h3>
+            <p>Komplett jernbinding av tunge punktfundamenter, dragere, heisgroper og armert gulv på grunn med høye krav til nøyaktighet.</p>
+          </div>
+        </article>
+        <article class="card img-card">
+          <div class="card-media"><img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=1200&q=78" srcset="https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=600&q=78 600w, https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=1000&q=78 1000w, https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=1600&q=78 1600w, https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=2200&q=78 2200w" sizes="(max-width: 640px) 92vw, (max-width: 1024px) 46vw, 600px" alt="Plasstøpte dekker og leilighetsbygg" loading="lazy" decoding="async" onerror="this.classList.add('broken')"></div>
+          <div class="pad">
+            <span class="tag">Bolig & Råbygg</span>
+            <h3>Plasstøpte dekker og leilighetsbygg</h3>
+            <p>Effektiv legging av under- og overarmering, armeringsnett, gjennomstikksarmering og utsparingsforsterkninger på etasjeskillere.</p>
+          </div>
+        </article>
+        <article class="card img-card">
+          <div class="card-media"><img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?auto=format&fit=crop&w=1200&q=78" srcset="https://images.unsplash.com/photo-1581094794329-c8112a89af12?auto=format&fit=crop&w=600&q=78 600w, https://images.unsplash.com/photo-1581094794329-c8112a89af12?auto=format&fit=crop&w=1000&q=78 1000w, https://images.unsplash.com/photo-1581094794329-c8112a89af12?auto=format&fit=crop&w=1600&q=78 1600w, https://images.unsplash.com/photo-1581094794329-c8112a89af12?auto=format&fit=crop&w=2200&q=78 2200w" sizes="(max-width: 640px) 92vw, (max-width: 1024px) 46vw, 600px" alt="Tunge anleggskonstruksjoner og støttemurer" loading="lazy" decoding="async" onerror="this.classList.add('broken')"></div>
+          <div class="pad">
+            <span class="tag">Anlegg & Samferdsel</span>
+            <h3>Tunge anleggskonstruksjoner og støttemurer</h3>
+            <p>Montering av grov dimensjonsarmering og skjøtesystemer for støttemurer, kulverter, fundamenter og teknisk infrastruktur.</p>
+          </div>
+        </article>
+    </div>
+    <div class="center">
+      <a class="btn btn-dark" href="./prosjekter/">Se flere prosjekter</a>
+    </div>
+  </div>
+</section>
+
+<section class="cta-banner">
+  <div class="container cta-in">
+    <div>
+      <h2>Trenger du et erfarent armeringslag til ditt neste støpeprosjekt? Ta kontakt for rask avklaring</h2>
+      <p>Send oss tegninger, bøyelister eller en kort beskrivelse av bemanningsbehovet – vi gir rask tilbakemelding på kapasitet og pris.</p>
+    </div>
+    <a class="btn btn-primary" href="./kontakt/">Forespør kapasitet eller tilbud</a>
+  </div>
+</section>
+</main>
+
+<footer class="site-footer">
+  <div class="container foot-grid">
+    <div class="foot-brand">
+      <a class="logo light" href="./"><span class="logo-mark" aria-hidden="true"></span><span>KS ARMERING AS</span></a>
+      <p>Spesialisert underentreprenør innen armering og jernbinding for hovedentreprenører, betongentreprenører, utbyggere og byggherrer over hele landet.</p>
+      <ul class="foot-contact">
+        <li><strong>Telefon:</strong> <a href="tel:+4740000000">+47 400 00 000</a></li>
+        <li><strong>E-post:</strong> <a href="mailto:post@ksarmering.no">post@ksarmering.no</a></li>
+        <li><strong>Åpningstid:</strong> Man–Fre 07:00–16:00</li>
+      </ul>
+    </div>
+    <div>
+      <h4>Hurtiglenker</h4>
+      <nav aria-label="Bunntekstmeny">
+        <a href="./">Hjem</a><a href="./tjenester/">Tjenester</a><a href="./prosjekter/">Prosjekter</a><a href="./om-oss/">Om oss</a><a href="./kontakt/">Kontakt</a>
+      </nav>
+    </div>
+    <div>
+      <h4>Fagområder</h4>
+      <ul class="foot-list">
+        <li><a href="./tjenester/#jernbinding">Jernbinding &amp; montering på plass</a></li>
+        <li><a href="./tjenester/#fundament">Armering for bygg, dekke &amp; fundament</a></li>
+        <li><a href="./tjenester/#anlegg">Anleggsarmering &amp; infrastruktur</a></li>
+        <li><a href="./tjenester/#kapasitet">Innleie av armeringslag &amp; prosjektstøtte</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Kvalitet &amp; Utførelse</h4>
+      <p class="foot-note">Alt armeringsarbeid utføres i henhold til tekniske arbeidstegninger, bøyelister, NS-EN 13670 og prosjektets kontrollplan.</p>
+      <a class="btn btn-primary btn-sm" href="./kontakt/">Send forespørsel →</a>
+    </div>
+  </div>
+  <div class="container foot-bottom">
+    <span>© KS Armering AS. Levert av Vikingnet.</span>
+    <span class="foot-meta">Jernbinding · Slakkarmering · Bygg, Industri &amp; Anlegg</span>
+  </div>
+</footer>
+
+<div class="mobile-cta-bar" role="region" aria-label="Hurtigkontakt">
+  <a class="btn btn-primary mobile-cta-btn" href="./kontakt/">Forespør kapasitet / tilbud</a>
+</div>
+
+<script type="module" src="./main.js"></script>
+</body>
+</html>
