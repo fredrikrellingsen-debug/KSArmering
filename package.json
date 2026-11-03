@@ -1,0 +1,13 @@
+{
+  "name": "ksarmering",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Flersidig nettside for KS Armering AS – klargjort for Firebase Hosting (site: ksarmering)",
+  "scripts": {
+    "build": "node build.mjs"
+  },
+  "dependencies": {
+    "firebase": "^11.0.2"
+  }
+}
